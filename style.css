@@ -1,0 +1,105 @@
+body {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+
+#top-menu {
+    float: right;
+    list-style-type: none;
+    }
+
+#top-menu li {
+    display: inline;
+    padding: 5px;
+    }
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey;
+    text-decoration-line: underline;
+}
+
+#main-area {
+    clear: both;
+    text-align: center;
+    margin: 100px;       
+}
+
+#searchbox {
+    width: 400px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.grey-button {
+    width:150px;
+    height: 25px;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    border:none;
+}
+
+.p-normal {
+    font-size: 15px;
+}
+
+#cntry {
+    position: fixed;
+    bottom: 40px;
+    padding:5px;
+    margin:0;
+    color: grey;
+}
+
+#bottom-left-menu {
+    position: fixed;
+    list-style-type:none;
+    margin: 0;
+    bottom:5px;
+    left:0px;
+    padding: 5px;
+}
+
+#bottom-left-menu li {
+    margin: 0;
+    display: inline;
+    padding: 5px
+}
+
+#bottom-left-menu li:first-child{
+    
+    padding: 0px;
+}
+
+#bottom-right-menu {
+    position: fixed;
+    list-style-type:none;
+    
+    bottom:5px;
+    right:0px;
+    padding: 5px;
+    margin:0
+}
+
+#bottom-right-menu li {
+    display: inline;
+    padding: 5px
+}
+
+.blue-button a {
+    background-color: blue;
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
