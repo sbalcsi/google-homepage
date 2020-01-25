@@ -2,6 +2,7 @@ body {
     background-color: whitesmoke;
     padding: 0;
     margin: 0;
+   
 }
 
 #top-menu {
@@ -26,10 +27,15 @@ a:hover {
 }
 
 #main-area {
+    position: fixed;
+    margin-top: 100px;
     clear: both;
     text-align: center;
-    margin: 100px;       
-}
+    width: 400px;
+    left:50%;
+    margin-left: -200px;
+    top:10%;
+   }
 
 #searchbox {
     width: 400px;
