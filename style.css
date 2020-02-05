@@ -1,13 +1,21 @@
+
+
 body {
     background-color: whitesmoke;
     padding: 0;
     margin: 0;
-   
+    min-width: 600px;
 }
 
+
+header {
+    width: 100%;
+}
 #top-menu {
+    position: relative;
     float: right;
     list-style-type: none;
+   
     }
 
 #top-menu li {
@@ -38,7 +46,7 @@ a:hover {
    }
 
 #searchbox {
-    width: 400px;
+    width: 100%;
     border-radius: 5px;
     margin: 10px;
 }
@@ -58,47 +66,51 @@ a:hover {
     font-size: 15px;
 }
 
-#cntry {
-    position: fixed;
-    bottom: 40px;
-    padding:5px;
-    margin:0;
+footer {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    left:0px;   
+    background-color: #e5e5e5;
+    width: 100%;
+    line-height: 1em;
+}
+
+footer p {
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-bottom: 0;
     color: grey;
 }
 
-#bottom-left-menu {
-    position: fixed;
+#bottom-menu {
     list-style-type:none;
-    margin: 0;
-    bottom:5px;
-    left:0px;
-    padding: 5px;
-}
-
-#bottom-left-menu li {
-    margin: 0;
+    padding: 0;
+    margin:0px 5px;
+    position: relative;
     display: inline;
-    padding: 5px
+    width: 100%;
+   
 }
 
-#bottom-left-menu li:first-child{
-    
-    padding: 0px;
-}
-
-#bottom-right-menu {
-    position: fixed;
-    list-style-type:none;
-    
-    bottom:5px;
-    right:0px;
-    padding: 5px;
-    margin:0
-}
-
-#bottom-right-menu li {
+#bottom-menu li {
     display: inline;
-    padding: 5px
+    padding: 0px 7px;  
+}
+
+#bm-right{
+    position: relative;
+    float: right;
+    margin:0;
+    padding:0;
+    overflow: hidden;   
+}
+#bm-left{
+position: relative;
+margin:0;
+padding:0;
 }
 
 .blue-button a {
@@ -108,4 +120,11 @@ a:hover {
     text-decoration: none;
     padding: 5px;
     font-weight: bold;
+    white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+    #bm-right{
+        float: none;
+        margin-top: 15px;
 }
